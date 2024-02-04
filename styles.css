@@ -1,0 +1,208 @@
+/*********************** Global styles *************************/
+
+* {
+    margin: 0;
+}
+
+html {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 18px;
+}
+
+body {
+    font-size: 100%;
+    background: url(images/MUVIZILA-home.png) no-repeat;
+    background-size: cover;
+}
+
+/*********************** nav styles *************************/
+
+.nav-bar {
+    height: 10vh;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: rgb(20, 12, 29);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.border {
+    padding: 5px;
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border:hover {
+    background-color: rgba(72, 56, 90, 0.4);
+    height: 80%;
+}
+
+/*************Left side styles **************/
+
+.nav-left {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    gap: 1rem;
+    font-size: 100%;
+    /* background-color: #6d03aa; */
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*************Search section styles **************/
+
+.search {
+    width: 50%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #1fdf0e; */
+}
+
+.search-bar { 
+   width: 85%;
+   height: 80%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+} 
+
+.search-icon {
+    width: 12%;
+    height: 106%;
+    border-top-left-radius: 7px; 
+    border-bottom-left-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dfd9ee;
+}
+
+.search-input {
+    width: 100%; 
+    height: 100%;
+    border-bottom-right-radius: 7px; 
+    border-top-right-radius: 7px;
+    font-size: 100%;
+    border: none;
+}
+
+.search-bar:hover {
+    border: 3px solid rgb(120, 1, 255);
+    border-radius: 10px;
+}
+ 
+/*************right side styles **************/
+
+.nav-right {
+    height: 100%;
+    width: 16%;
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     /* gap: 1rem; */
+} 
+
+/*************Mood container styles **************/
+
+.pointer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    animation-name: border-anime;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes border-anime {
+    from { 
+        border-bottom: 2px solid #0400ff;
+        border-right: 2px solid #0400ff;
+        border-top: 2px solid #ff028d;
+        border-left: 2px solid #ff028d;
+    }
+    to {
+        border-bottom: 3px solid #ff028d;
+        border-right: 3px solid #ff028d;
+        border-top: 3px solid #0400ff;
+        border-left: 3px solid #0400ff;
+    }
+}
+
+/*************Mood Menu container styles**************/
+
+.sub-menu-wrap {
+    position: absolute;
+    top: 11%;
+    width: 20%;
+    height: 40%;
+    right: 5%;
+    text-align: center;
+    max-height: 0px;
+    overflow: scroll;
+    transition: 0.3s;
+}
+
+.sub-menu-wrap.open-menu {
+    max-height: 100%;
+}
+
+.sub-menu {
+    background: rgb(20, 12, 29);
+    padding: 10px;
+}
+
+.sub-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+
+.sub-menu-link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.mood {
+    height: 40%;
+}
+
+.mood:hover {
+    background-color: rgb(58, 15, 107, 0.5);
+    font-weight: bolder;
+}
+
+/*************User info styles **************/
+
+.user {
+    height: 70%;
+    width: 26%;
+    border-radius: 50%;
+    background: #6d03aa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-user:hover {
+    border: 2px solid #ffffff;
+}
+
